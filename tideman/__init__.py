@@ -83,6 +83,12 @@ def add_pairs4():
     check50.run("./tideman_test 1 7").stdout("0").exit(0)
 
 @check50.check(compiles)
+@check50.hidden("add_pairs function does not skip pairs")
+def add_pairs5():
+    """add_pairs includes pair with candidate 0"""
+    check50.run("./tideman_test 7 5").stdout("2").exit(0)
+
+@check50.check(compiles)
 @check50.hidden("sort_pairs did not correctly sort pairs")
 def sort_pairs1():
     """sort_pairs sorts pairs of candidates by margin of victory"""
