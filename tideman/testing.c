@@ -97,6 +97,14 @@ int main(int argc, string argv[])
             candidates[4] = "Eric";
             candidates[5] = "Frank";
             break;
+
+        case 7:
+            candidate_count = 3;
+            preferences[0][1] = 4;
+            preferences[1][0] = 1;
+            preferences[0][2] = 3;
+            preferences[2][0] = 2;
+            break;
     }
 
     // Test
