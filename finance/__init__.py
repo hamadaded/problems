@@ -12,8 +12,7 @@ os.environ["API_KEY"] = "foo"
 def exists():
     """app.py exists"""
     check50.exists("app.py")
-    check50.include("lookup.py")
-    check50.py.append_code("helpers.py", "lookup.py")
+    check50.include("lookup.py", "helpers.py")
 
 
 @check50.check(exists)
